@@ -1,0 +1,44 @@
+{
+  "name": "voucher-box",
+  "version": "1.0.0",
+  "description": "VoucherBox - Digital Discount Voucher Campaign dApp on BOT Chain",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network botchainTestnet",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network botchain",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "seed:testnet": "hardhat run scripts/seedDemo.js --network botchainTestnet",
+    "seed:local": "hardhat run scripts/seedDemo.js --network localhost"
+  },
+  "dependencies": {
+    "@reown/appkit": "^1.8.24",
+    "@reown/appkit-adapter-wagmi": "^1.8.24",
+    "@tanstack/react-query": "^5.67.1",
+    "canvas-confetti": "^1.9.4",
+    "ethers": "^6.13.5",
+    "html5-qrcode": "^2.3.8",
+    "lucide-react": "^1.16.0",
+    "qrcode.react": "^4.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "viem": "^2.23.5",
+    "wagmi": "^2.14.12"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "dotenv": "^16.4.7",
+    "hardhat": "^2.22.19",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.2.0"
+  }
+}
